@@ -19,12 +19,12 @@ def send_welcome(message):
 	mensaje = """Hey, hola! Yo soy Alana, el asistente virtual de los trabajadores de Telmex. Estoy aquí para ayudarte. 
 	Yo te estaré enviando distintos tipos de notificaciones.
 	
-	También puedo brindarte tu <b>Telegram_id</b>, sólo envíame el comando: /get_telegram_id y te lo estaré enviando.
+	También puedo brindarte tu <b>Telegram_id</b>, sólo envíame el comando: /obtener_id_telegram y te lo estaré enviando.
 	Si tienes algún problema, se lo podrías reportar al equipo de Inovación tecnológica o a @iangelmx."""
 
 	bot.reply_to(message, mensaje, parse_mode='HTML')
 
-@bot.message_handler(commands=['get_telegram_id'])
+@bot.message_handler(commands=['obtener_id_telegram'])
 def comando(message):
 	chat_id = message.from_user.id
 	
